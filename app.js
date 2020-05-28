@@ -1,7 +1,6 @@
-const rect = {
-    perimeter: (x,y) => 2 + (x,y),
-    area: (x,y) => x*y
-};
+//importing in exported functions for rect.perimeter, rect.area from rectangle.js file. it is rect.specificExport
+
+const rect = require('./rectangle');
 
 function solveRect(l,w) {
     console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
